@@ -1,0 +1,214 @@
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 96px;
+}
+
+.header-container {
+    background-color: #FFFFFF;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon-bars {
+    color: #000000;
+}
+
+.logo .logo-div {
+    height: 36px;
+    width: 36px;
+}
+
+.main-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 43.57px;
+    letter-spacing: 1px;
+    color: #000000;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icons .fa-icon {
+    color: black;
+    padding: 5px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #000000;
+}
+
+.icons svg {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.language svg {
+    margin-left: 5px;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 30px 0px 10px 0px;
+}
+
+.nav a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 5px;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.5s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.header-menu-div {
+    display: none;
+}
+
+/* Responsive Design for Tablet */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .main-title {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .icons svg {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .menu-icon-flex {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon-div {
+        display: none;
+    }
+
+    .logo .logo-div {
+        height: 28px;
+        width: 28px;
+    }
+
+    .main-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .icons svg {
+        font-size: 16px;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .nav.nav-open {
+        display: flex;
+        padding: 10px 20px 0px 20px;
+    }
+
+    .icons {
+        gap: 10px;
+    }
+
+    .header-menu-div {
+        display: block;
+        display: flex;
+        column-gap: 10px;
+        padding: 15px 15px 0px 15px;
+    }
+
+    .header-menu-home {
+        color: #bfc8cd;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        text-align: left;
+    }
+
+    .header-menu-div hr {
+        transform: rotate(180deg);
+        font-weight: 400;
+        height: 14.4px;
+    }
+
+    .header-menu-shop {
+        color: #252020;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .main-title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .icons svg {
+        font-size: 14px;
+    }
+
+    .logo .logo-div {
+        height: 24px;
+        width: 24px;
+    }
+}

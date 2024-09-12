@@ -1,0 +1,43 @@
+body {
+    font-family: 'Simplon Norm', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-jc-start {
+    justify-content: flex-start;
+}
+
+.flex-jc-end {
+    justify-content: flex-end;
+}
+
+.flex-jc-center {
+    justify-content: center;
+}
+
+.flex-jc-between {
+    justify-content: space-between;
+}
+
+.flex-jc-around {
+    justify-content: space-around;
+}
+
+.flex-jc-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-ai-center {
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}

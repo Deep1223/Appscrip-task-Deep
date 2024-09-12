@@ -1,0 +1,370 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding: 60px 128px 0px 128px;
+}
+
+.class-footer-gap {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.ft-7 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.fd-4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+}
+
+.footer .signup-text-div {
+    padding: 8px 0px 12px 0px;
+}
+
+.footer-signup {
+    padding: 39px 0px;
+    display: flex;
+    gap: 8px;
+}
+
+.footer-signup input {
+    width: 320px;
+    padding: 10px 12px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.footer-signup button {
+    width: 130px;
+    border-radius: 5px;
+    border: 1.14px solid #FFFFFF;
+    background-color: #000000;
+    opacity: 30%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    text-align: left;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.contactno {
+    padding-bottom: 7px;
+}
+
+.contactus-email {
+    padding: 7px 0px;
+}
+
+.currency-title {
+    padding-top: 19px;
+}
+
+.flag-img {
+    height: 24px;
+    width: 24px;
+}
+
+.currency-info {
+    display: flex;
+    gap: 5px;
+}
+
+.currency-detail {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.square-icon {
+    font-size: 6px;
+    color: white;
+    transform: rotate(45deg);
+}
+
+.currency-code {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: left;
+}
+
+.currency-transaction-info {
+    padding: 10px 0px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+}
+
+.footer hr {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.menu-col-title {
+    padding: 3px 0px 15px 0px;
+}
+
+.fdp-menu {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.brand-icon {
+    height: 16px;
+}
+
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.brand-iconDiv {
+    display: flex;
+    gap: 12px;
+}
+
+.payment-method {
+    padding-top: 50px;
+}
+
+.payment-methodDiv {
+    display: flex;
+    gap: 8px;
+}
+
+.copyright {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+    padding: 30px 0px 15px 0px;
+}
+
+.footer-mobile {
+    display: none;
+}
+
+.fdp-menu-mobile,
+.fdp-menu-mobile-quick-link,
+.social-links-dropdown {
+    display: none;
+}
+
+.fdp-menu-mobile.open,
+.fdp-menu-mobile-quick-link.open,
+.social-links-dropdown.open {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        padding: 60px 80px 0px 80px;
+    }
+
+    .footer-signup input {
+        width: 250px;
+    }
+
+    .footer-signup button {
+        width: 110px;
+    }
+
+    .currency-transaction-info {
+        font-size: 9px;
+    }
+
+    .ft-7 {
+        font-size: 17px;
+    }
+
+    .fd-4,
+    .currency-code {
+        font-size: 13px;
+    }
+
+    .footer-signup button,
+    .fdp-menu {
+        font-size: 15px;
+    }
+
+    .copyright {
+        font-size: 11px;
+    }
+
+    .payment-methodDiv {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        max-width: 230px;
+    }
+
+    .payment-methodDiv span {
+        flex: 0 1 auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 40px 0px 40px;
+    }
+
+    .class-footer-gap {
+        flex-direction: column;
+    }
+
+    .footer-mobile {
+        display: block;
+    }
+
+    .signup-text-div {
+        display: none;
+    }
+
+    .footer-contact-info {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        padding: 10px 0px 3px 0px;
+    }
+
+    .footer-contact-info span {
+        padding-bottom: 5px;
+    }
+
+    .footer-full-screen {
+        display: none;
+    }
+
+    .footer-signup {
+        width: 100%;
+    }
+
+    .footer-signup input {
+        width: 70%;
+        padding: 12px 12px;
+    }
+
+    .footer-signup button {
+        width: 30%;
+    }
+
+    .fdp-menu-mobile,
+    .fdp-menu-mobile-quick-link {
+        display: none;
+    }
+
+    .fdp-menu-mobile.open,
+    .fdp-menu-mobile-quick-link.open {
+        display: flex;
+    }
+
+    .fa-footer-icon.rotate,
+    .fa-footer-quick-link-icon.rotate,
+    .fa-footer-social-icon.rotate {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    }
+
+    .footer-mobile-title,
+    .footer-call-us,
+    .currency-title {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.2px;
+        text-align: left;
+    }
+
+    .currency-title {
+        padding-top: 0px;
+    }
+
+    .footer-title-description {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    .currency-code,
+    .footer-mobile-metta-div {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.8px;
+        text-align: left;
+    }
+
+    .footer-dropdown-mobile-div {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.2px;
+        text-align: left;
+    }
+
+    .payment-methodDiv-mobile {
+        display: flex;
+        column-gap: 10px;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+
+    .footer-signup {
+        padding: 20px 0px;
+    }
+
+    .footer-hr-mobile-div {
+        margin: 10px 0px;
+    }
+
+    .hr-div {
+        margin-top: 10px
+    }
+
+    .footer-mobile-metta-div {
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 20px 0px 20px;
+    }
+
+    .payment-methodDiv-mobile {
+        display: flex;
+        justify-content: space-between;
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+
+    .footer-contact-info {
+        font-size: 11px;
+    }
+}

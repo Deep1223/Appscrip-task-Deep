@@ -1,0 +1,122 @@
+.items {
+    padding: 20px 0px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.card {
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+}
+
+.name {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    text-align: left;
+    color: #252020;
+}
+
+.actions {
+    margin-bottom: 20px;
+    font-family: Simplon Norm;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: #888792;
+}
+
+.actions .signin-div {
+    text-decoration: underline;
+}
+
+.heart-div {
+    display: flex;
+    align-items: center;
+}
+
+.heart {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.product-desc-div {
+    padding: 0px 7px;
+}
+
+.new-product-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #000000;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.out-of-stock {
+    opacity: 0.6;
+}
+
+.product-stock-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    padding: 25px 20px;
+    border-radius: 4px;
+    z-index: 1;
+    color: #000000;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .items {
+        padding: 20px 40px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .image {
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .items {
+        padding: 20px 60px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image {
+        max-height: 150px;
+    }
+}

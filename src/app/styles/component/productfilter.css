@@ -1,0 +1,55 @@
+.as-div {
+    padding-bottom: 20px;
+}
+
+.filter-dropdown-section {
+    margin-bottom: 20px;
+}
+
+.filter-dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.filter-dropdown-icon {
+    font-size: 12px;
+    transition: transform 0.3s;
+}
+
+.filter-dropdown-icon.rotate {
+    transform: rotate(180deg);
+}
+
+.filter-dropdown-content {
+    margin-top: 10px;
+}
+
+.filter-dropdown-content label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.filter-dropdown-content input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.selectall-item {
+    cursor: pointer;
+    color: #252020;
+    padding: 10px 0px;
+}
+
+.unselectall-item {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #BFC8CD;
+    padding: 10px 0px;
+}
