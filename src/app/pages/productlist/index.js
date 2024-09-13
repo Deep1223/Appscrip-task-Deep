@@ -1,8 +1,6 @@
-"use client"; // This marks the component as a Client Component
+"use client";
 
-import React, { useState, useEffect } from 'react';
 import '../../styles/pages/productlist.css';
-
 import OurProduct from "../../component/ourproduct";
 import Products from "../../common/product";
 import Productdropdown from "../../component/productdropdown";
@@ -10,27 +8,15 @@ import Productfilter from '@/app/component/productfilter';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 
-const ProductList = () => {
+const ProductList = ({ products }) => {
     const [filterVisible, setFilterVisible] = useState(false);
-    const [totalItems, setTotalItems] = useState(0);
+    const totalItems = products.length;
 
     const toggleFilter = () => {
         setFilterVisible(!filterVisible);
     };
-
-    useEffect(() => {
-        fetch('https://fakestoreapi.com/products')
-            .then(res => {
-                if (!res.ok) throw new Error('Network response was not ok');
-                return res.json();
-            })
-            .then(data => {
-                console.log('Fetched data:', data);
-                setTotalItems(data.length);
-            })
-            .catch(error => console.error('Error fetching products:', error));
-    }, []);
 
     return (
         <div className={`production-section ${filterVisible ? 'filter-open' : ''}`}>
@@ -62,7 +48,7 @@ const ProductList = () => {
                 </div>
 
                 <div className="product-list-section">
-                    <Products />
+                    <Products products={products} />
                 </div>
             </div>
         </div>

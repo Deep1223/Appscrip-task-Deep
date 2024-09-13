@@ -1,36 +1,10 @@
-import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import '../../styles/common/product.css';
 
-const Products = () => {
-    const [products, setProducts] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-
-    useEffect(() => {
-        fetch('https://fakestoreapi.com/products')
-            .then(res => {
-                if (!res.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return res.json();
-            })
-            .then(data => {
-                setProducts(data);
-                setLoading(false);
-            })
-            .catch(error => {
-                setError(error.message);
-                setLoading(false);
-            });
-    }, []);
-
+const Products = ({ products }) => {
     const truncateName = (name) => {
         return name.length > 20 ? `${name.substring(0, 20)}...` : name;
     };
-
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>Error: {error}</p>;
 
     return (
         <div className='items'>
@@ -38,7 +12,7 @@ const Products = () => {
                 {products.map((product) => (
                     <div key={product.id} className='card'>
                         <div className='image-container'>
-                            <Image 
+                            <Image
                                 src={product.image}
                                 alt={product.title}
                                 className={`image ${product.rating.count === 0 ? 'out-of-stock' : ''}`}

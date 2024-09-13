@@ -1,5 +1,3 @@
-"use client"; // Add this at the top to make this a client component
-
 import Head from 'next/head';
 import './styles/common/common.css';
 import './styles/common/header.css';
@@ -9,26 +7,12 @@ import logo from '../../src/app/images/logo.png';
 import Header from './common/header';
 import Footer from './common/footer';
 import ProductList from './pages/productlist';
-import { useEffect, useState } from 'react';
 
-export default function Home() {
-  const [products, setProducts] = useState([]);
-  const [seoProduct, setSeoProduct] = useState(null);
+export default async function Home() {
+  const res = await fetch('https://fakestoreapi.com/products');
+  const products = await res.json();
 
-  useEffect(() => {
-    async function fetchProducts() {
-      try {
-        const res = await fetch('https://fakestoreapi.com/products');
-        const data = await res.json();
-        console.log("Fetched products: ", data); // Debugging line
-        setProducts(data);
-        setSeoProduct(data[0]);
-      } catch (error) {
-        console.error("Error fetching products:", error);
-      }
-    }
-    fetchProducts();
-  }, []);
+  const seoProduct = products[0];
 
   return (
     <>
@@ -49,7 +33,7 @@ export default function Home() {
       </Head>
       <main>
         <Header />
-        <ProductList />
+        <ProductList products={products} />
         <Footer />
       </main>
     </>
