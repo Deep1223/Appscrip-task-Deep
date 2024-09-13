@@ -49,8 +49,7 @@ export default function Home() {
       </Head>
       <main>
         <Header />
-        {/* Pass products as a prop to ProductList */}
-        <ProductList products={products} />
+        <ProductList />
         <Footer />
       </main>
     </>
