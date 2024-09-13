@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import './styles/common/common.css';
 import './styles/common/header.css';
-import './styles/component/OurProduct.css';
-import logo from '../../src/app/images/logo.png';
+import './styles/component/ourProduct.css';
+import logo from '../../src/app/images/Logo.png';
 
 import Header from './common/header';
 import Footer from './common/footer';
